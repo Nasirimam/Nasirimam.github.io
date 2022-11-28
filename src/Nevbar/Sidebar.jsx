@@ -23,7 +23,7 @@ const SideBar = () => {
 
   return (
     <Box display="flex" alignItems="center" justifyContent="flex-start" gap={6} pos="sticky" top={0}>
-      <Button colorScheme="blue" onClick={onOpen}>
+      <Button colorScheme="cyan" onClick={onOpen}>
         <FaBars />
       </Button>
       <Heading size="sm">{nasir}</Heading>

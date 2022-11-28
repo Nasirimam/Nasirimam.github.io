@@ -17,10 +17,8 @@ import { HashLink } from "react-router-hash-link";
 import SideBar from "./Sidebar";
 
 const Navbar = () => {
-  const nasir = "< Nasir />";
 
   const [size, setSize] = useState(false);
-  const { colorMode, toggleColorMode } = useColorMode();
 
   console.log(size);
 
@@ -43,19 +41,17 @@ const Navbar = () => {
   if (!size) {
     return (
       <Grid
-        templateColumns="repeat(9, 1fr)"
+        templateColumns="repeat(8, 1fr)"
         fontFamily="lorem"
         fontSize={{ base: "7px", md: "14px", lg: "18px" }}
         gap={4}
         fontWeight="semibold"
-        border="0px solid white"
         p={5}
         pos="sticky"
         top={0}
-        zIndex={10}
-        bgColor={colorMode == "light" ? "white" : "gray.800"}
+        border="0px solid red"
       >
-        <GridItem>{nasir}</GridItem>
+        <GridItem><span style={{color:'red'}}>iam</span>Nasir</GridItem>
         <Spacer />
         <GridItem>
           <HashLink smooth to="#home">
@@ -86,12 +82,6 @@ const Navbar = () => {
           <HashLink smooth to="#resume">
             Resume
           </HashLink>
-        </GridItem>
-        <GridItem border="0px solid red">
-          <Button
-            size={{ base: "7px", md: "xs", lg: "sm" }}
-            onClick={toggleColorMode}
-          >{colorMode == "dark" ? "Dark" : "Light"}</Button>
         </GridItem>
       </Grid>
     );
