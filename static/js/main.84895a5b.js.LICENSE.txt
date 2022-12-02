@@ -54,7 +54,7 @@ PERFORMANCE OF THIS SOFTWARE.
  */
 
 /**
- * @remix-run/router v1.0.3
+ * @remix-run/router v1.0.4
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -65,7 +65,7 @@ PERFORMANCE OF THIS SOFTWARE.
  */
 
 /**
- * React Router DOM v6.4.3
+ * React Router DOM v6.4.4
  *
  * Copyright (c) Remix Software Inc.
  *
