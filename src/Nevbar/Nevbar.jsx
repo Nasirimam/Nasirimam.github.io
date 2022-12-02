@@ -17,28 +17,11 @@ import { HashLink } from "react-router-hash-link";
 import SideBar from "./Sidebar";
 
 const Navbar = () => {
+  const [size, setSize] = useState(window.innerWidth);
 
-  const [size, setSize] = useState(false);
-
-  console.log(size);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setSize(true);
-      } else {
-        setSize(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  if (!size) {
+  // console.log(size);
+  
+  if (size>800) {
     return (
       <Grid
         templateColumns="repeat(8, 1fr)"
@@ -50,35 +33,38 @@ const Navbar = () => {
         pos="sticky"
         top={0}
         border="0px solid red"
+        bgColor="blackAlpha.800"
       >
-        <GridItem><span style={{color:'red'}}>iam</span>Nasir</GridItem>
-        <Spacer />
         <GridItem>
+          <span style={{ color: "red" }}>iam</span>Nasir
+        </GridItem>
+        <Spacer />
+        <GridItem color="white">
           <HashLink smooth to="#home">
             Home
           </HashLink>
         </GridItem>
-        <GridItem>
+        <GridItem color="white">
           <HashLink smooth to="#about">
             About Me
           </HashLink>
         </GridItem>
-        <GridItem>
+        <GridItem color="white">
           <HashLink smooth to="#skills">
             Skills
           </HashLink>
         </GridItem>
-        <GridItem>
+        <GridItem color="white">
           <HashLink smooth to="#project">
             Project
           </HashLink>
         </GridItem>
-        <GridItem>
+        <GridItem color="white">
           <HashLink smooth to="#contect">
             Contect
           </HashLink>
         </GridItem>
-        <GridItem>
+        <GridItem color="white">
           <HashLink smooth to="#resume">
             Resume
           </HashLink>

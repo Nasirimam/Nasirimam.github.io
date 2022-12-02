@@ -10,7 +10,8 @@ import {
 
 const Home = () => {
   return (
-    <Box border="0px solid red" id="home" pt={100}>
+    <Box border="0px solid red" id="home">
+      <Heading color="red" pb={50}>Home</Heading>
       <Flex
         border="0px solid"
         w={{ base: "100%", sm: "90%", md: "80%" }}

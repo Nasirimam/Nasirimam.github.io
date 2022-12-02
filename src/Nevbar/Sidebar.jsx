@@ -11,6 +11,7 @@ import {
   useDisclosure,
   Switch,
 } from "@chakra-ui/react";
+import { useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 
@@ -21,16 +22,34 @@ const SideBar = () => {
 
   const { colorMode, toggleColorMode } = useColorMode();
 
+  useEffect(()=>{
+    toggleColorMode()
+  },[])
+
   return (
-    <Box display="flex" alignItems="center" justifyContent="flex-start" gap={6} pos="sticky" top={0}>
-      <Button colorScheme="cyan" onClick={onOpen}>
+    <Box
+      display="flex"
+      alignItems="center"
+      justifyContent="flex-start"
+      gap={6}
+      pos="sticky"
+      top={0}
+    >
+      <Button colorScheme="none" onClick={onOpen} color="whiteAlpha.900">
         <FaBars />
       </Button>
-      <Heading size="sm">{nasir}</Heading>
-      <Drawer placement={"left"} onClose={onClose} size="xs" isOpen={isOpen}>
+      <Drawer
+        placement={"left"}
+        onClose={onClose}
+        size="xs"
+        colorScheme="blackAlpha"
+        isOpen={isOpen}
+      >
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
+          <DrawerHeader borderBottomWidth="2px">
+            <span style={{ color: "red" }}>iam</span>Nasir
+          </DrawerHeader>
           <DrawerBody display="flex" gap={5} flexDir="column">
             <HashLink to="#home" onClick={onClose}>
               Home
@@ -50,12 +69,6 @@ const SideBar = () => {
             <HashLink to="#resume" onClick={onClose}>
               Resume
             </HashLink>
-            <Button
-            w={70}
-              onClick={toggleColorMode}
-            >
-              {colorMode == "dark" ? "Dark" : "Light"}
-            </Button>
           </DrawerBody>
         </DrawerContent>
       </Drawer>

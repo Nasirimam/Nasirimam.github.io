@@ -12,7 +12,8 @@ import {
 
 const About = () => {
   return (
-    <Box id="about" border="0px solid red" pt={100} display="flex">
+    <Box id="about" border="0px solid red" textAlign="center">
+      <Heading color="red" pb={30}>About</Heading>
       <Grid
         border="0px solid"
         templateColumns={{
