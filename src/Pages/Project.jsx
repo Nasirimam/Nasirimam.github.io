@@ -1,4 +1,12 @@
-import { Box, Center, Flex, Heading, Image, Square } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Flex,
+  Heading,
+  Image,
+  Square,
+} from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import Myimages from "../Images/GoodFood.webp";
 import codecov from "../Images/codecov.webp";
@@ -8,22 +16,53 @@ const Project = () => {
   const projectItem = [
     {
       image: Myimages,
-      name: "Good Food Home Delevery",
-      dis: "",
+      name: " Good Food Home Delevery",
+      dis: " This is a Web Page of a Resuturent. It is Used to order Food online Easly",
+      tools: "React.js, JavaScript, Chakra UI, json-server",
       link: "https://lovely-brioche-dc2cb9.netlify.app/",
+      github:
+        "https://github.com/Nasirimam/daring-ship-8304/tree/main/my-pro/src",
+      demovideo:
+        "https://drive.google.com/file/d/1FdV3KC-OiOoWkiydp94HE66A_zbOnJZ2/view?usp=share_link",
     },
     {
       image: codecov,
       name: "Code Cov Online Courses",
-      dis: "",
+      dis: "This is a online course selling app. Which help the user to buy any course easly and Learn.",
+      tools: "JavaScript, HTML, CSS",
       link: "https://dainty-alfajores-329d03.netlify.app/",
+      github: "https://github.com/Nasirimam/resilient-gate-1588",
+      demovideo:
+        "https://drive.google.com/file/d/12rk2dFJLtHnt5YOXS7P_g_vPIb6qzP0Q/view?usp=share_link",
     },
   ];
 
+  const handleGitClick = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
+  const handleDemoClick = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <Box id="project" mt={150} mb={100} border="0px solid red">
-      <Heading color="red" id="skills" pb={10}>Projects</Heading>
-      <Flex w="80%" margin="auto" border="0px solid white" gap={10}>
+      <Heading color="red" id="skills" pb={10}>
+        Projects
+      </Heading>
+      <Flex
+        w="80%"
+        margin="auto"
+        border="0px solid white"
+        gap={10}
+        flexDirection={{
+          base: "column",
+          sm: "column",
+          md: "row",
+          lg: "row",
+          xl: "row",
+        }}
+      >
         {projectItem.map((elem) => (
           <Box key={elem.name}>
             <a href={elem.link}>
@@ -40,15 +79,45 @@ const Project = () => {
               </Center>
             </a>
             <Box
-              border="2px solid green"
-              fontSize={{ base: 6, sm: 10, md: 15, lg: 20, xl: 22 }}
+              border="0px solid green"
+              fontSize={{ base: 12, sm: 20, md: 15, lg: 20, xl: 22 }}
               color="blue.500"
               display="flex"
               flexDir="column"
-              alignItems="flex-start"
+              padding={1}
             >
-              <Square p={1}>Name : {elem.name}</Square>
-              <Square p={1}>Discription : {elem.dis}</Square>
+              <Center borderBottom="2px solid red" p={1} color="red">
+                Name
+              </Center>
+              <Center p={1} mb={{ base: 3, sm: 4, md: 5, lg: 5, xl: 5 }}>
+                {elem.name}
+              </Center>
+              <Center borderBottom="2px solid red" p={1} color="red">
+                Discription
+              </Center>
+              <Center p={1} mb={{ base: 3, sm: 4, md: 5, lg: 5, xl: 5 }}>
+                {elem.dis}
+              </Center>
+              <Center borderBottom="2px solid red" p={1} color="red">
+                Tools
+              </Center>
+              <Center p={1} mb={{ base: 3, sm: 4, md: 5, lg: 5, xl: 5 }}>
+                {elem.tools}
+              </Center>
+              <Center gap={5}>
+                <Button
+                  colorScheme="cyan"
+                  onClick={() => handleGitClick(elem.github)}
+                >
+                  GitHub
+                </Button>
+                <Button
+                  colorScheme="cyan"
+                  onClick={() => handleDemoClick(elem.demovideo)}
+                >
+                  Demo Video
+                </Button>
+              </Center>
             </Box>
           </Box>
         ))}
