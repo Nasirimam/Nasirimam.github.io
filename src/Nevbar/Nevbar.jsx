@@ -61,7 +61,7 @@ const Navbar = () => {
         </GridItem>
         <GridItem color="white">
           <HashLink smooth to="#contect">
-            Contect
+            Contect Me
           </HashLink>
         </GridItem>
         <GridItem color="white">

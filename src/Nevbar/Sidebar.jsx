@@ -64,7 +64,7 @@ const SideBar = () => {
               Project
             </HashLink>
             <HashLink to="#contect" onClick={onClose}>
-              Contect
+              Contect Me
             </HashLink>
             <HashLink to="#resume" onClick={onClose}>
               Resume

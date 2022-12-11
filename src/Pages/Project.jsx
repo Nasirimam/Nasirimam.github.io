@@ -10,6 +10,7 @@ import {
 import { NavLink } from "react-router-dom";
 import Myimages from "../Images/GoodFood.webp";
 import codecov from "../Images/codecov.webp";
+import { FaGit, FaGithub, FaPlay } from "react-icons/fa";
 
 const Project = () => {
   // console.log(Myimages);
@@ -108,12 +109,14 @@ const Project = () => {
                 <Button
                   colorScheme="cyan"
                   onClick={() => handleGitClick(elem.github)}
+                  leftIcon={<FaGithub />}
                 >
                   GitHub
                 </Button>
                 <Button
                   colorScheme="cyan"
                   onClick={() => handleDemoClick(elem.demovideo)}
+                  leftIcon={<FaPlay />}
                 >
                   Demo Video
                 </Button>
