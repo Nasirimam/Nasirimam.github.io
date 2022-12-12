@@ -55,16 +55,18 @@ const Skills = () => {
 
   return (
     <>
-      <Heading color="red" id="skills">Skills</Heading>
+      <Heading color="red" id="skills">
+        Skills
+      </Heading>
       <SimpleGrid
         w="80%"
         margin="auto"
         columns={{
-          base: 2,
-          sm: 2,
+          base: 3,
+          sm: 3,
           md: 3,
-          lg: 3,
-          xl: 3,
+          lg: 4,
+          xl: 4,
         }}
         spacing={10}
         mt={10}
@@ -77,6 +79,15 @@ const Skills = () => {
             display="flex"
             flexDir="column"
             key={elem.name}
+            justifyContent="center"
+            alignItems="center"
+            transition="0.5s"
+            cursor="pointer"
+            _hover={{
+              transform: "scale(1.1)",
+              boxShadow:
+                "rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;",
+            }}
           >
             <Image src={elem.image} alt={elem.name} w="100%" />
           </Center>

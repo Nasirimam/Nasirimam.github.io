@@ -34,6 +34,7 @@ const Navbar = () => {
         top={0}
         border="0px solid red"
         bgColor="blackAlpha.800"
+        zIndex="overlay"
       >
         <GridItem>
           <span style={{ color: "red" }}>iam</span>Nasir

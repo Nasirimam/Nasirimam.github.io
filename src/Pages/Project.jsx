@@ -52,7 +52,7 @@ const Project = () => {
         Projects
       </Heading>
       <Flex
-        w="80%"
+        w="85%"
         margin="auto"
         border="0px solid white"
         gap={10}
@@ -65,7 +65,18 @@ const Project = () => {
         }}
       >
         {projectItem.map((elem) => (
-          <Box key={elem.name}>
+          <Box
+            key={elem.name}
+            bgColor="whiteAlpha.900"
+            p={{
+              base: 3,
+              sm: 4,
+              md: 5,
+              lg: 6,
+              xl: 6,
+            }}
+            borderRadius={10}
+          >
             <a href={elem.link}>
               <Center
                 border="0px solid red"

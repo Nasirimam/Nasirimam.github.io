@@ -13,23 +13,6 @@ const Resume = () => {
       <Heading color="red" id="resume" pb={10}>
         Resume
       </Heading>
-      <Box
-        display="flex"
-        w="60%"
-        h={{
-          base: "300px",
-          sm: "400px",
-          md: "500px",
-          lg: "600px",
-          xl: "800px",
-          "2xl": "800px",
-        }}
-        margin="auto"
-        flexDir="column"
-        mb={10}
-      >
-        <Image src={myResume} width="100%" h="100%" />
-      </Box>
       <Button
         mb={10}
         colorScheme="cyan"
