@@ -6,25 +6,19 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
-  Heading,
-  useColorMode,
   useDisclosure,
-  Switch,
 } from "@chakra-ui/react";
-import { useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 
 const SideBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const nasir = "< Nasir />";
+  // const { colorMode, toggleColorMode } = useColorMode();
 
-  const { colorMode, toggleColorMode } = useColorMode();
-
-  useEffect(()=>{
-    toggleColorMode()
-  },[])
+  // useEffect(()=>{
+  //   toggleColorMode()
+  // },[])
 
   return (
     <Box
