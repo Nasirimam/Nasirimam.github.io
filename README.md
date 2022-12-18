@@ -12,5 +12,5 @@ Chakra UI (UI Styling Library) Styled-Components.
 Deployed Link : https://nasirimam.github.io/
 
 
-----
+---
 <h1 align="center">✨Thank You✨</h1>
