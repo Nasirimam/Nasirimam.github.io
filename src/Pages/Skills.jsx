@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
 } from "@chakra-ui/react";
+import GitHubCalendar from "react-github-calendar";
 
 const Skills = () => {
   const SkillItem = [
@@ -93,6 +94,40 @@ const Skills = () => {
           </Center>
         ))}
       </SimpleGrid>
+      <Heading color="red" id="skills" mt={10}>
+        Github Calender
+      </Heading>
+      <Flex color={"whiteAlpha.900"} justify={"center"} mt={5}>
+        <GitHubCalendar username="Nasirimam" />
+      </Flex>
+      <Heading color="red" id="skills" mt={10}>
+        Github Stats
+      </Heading>
+      <Flex
+        justify={"center"}
+        alignItems={"center"}
+        w="80%"
+        margin={"auto"}
+        gap={5}
+        mt={5}
+      >
+        <Box flex={1}>
+          <Image
+            src="https://github-readme-stats.vercel.app/api?username=Nasirimam&show_icons=true&include_all_commits=true&count_private=true&hide=issues,contribs&border_radius=0&locale=en&theme=radical"
+            alt="m-sehrawat"
+            // w={"100%"}
+            // h={"100%"}
+          />
+        </Box>
+        <Box flex={1}>
+          <Image
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nasirimam&layout=compact&exclude_repo=Lybrate-Website-Clone-Version-2.0,Lybrate-Website-Clone,Adidas-Clone&hide=Shell&border_radius=0&theme=radical"
+            alt="m-sehrawat"
+            w={"76%"}
+            // h={"100%"}
+          />
+        </Box>
+      </Flex>
     </>
   );
 };

@@ -105,7 +105,7 @@ const Project = () => {
                 {elem.name}
               </Center>
               <Center borderBottom="2px solid red" p={1} color="red">
-                Discription
+                Description
               </Center>
               <Center p={1} mb={{ base: 3, sm: 4, md: 5, lg: 5, xl: 5 }}>
                 {elem.dis}
