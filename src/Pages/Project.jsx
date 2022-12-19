@@ -5,11 +5,14 @@ import {
   Flex,
   Heading,
   Image,
+  SimpleGrid,
   Square,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import Myimages from "../Images/GoodFood.webp";
 import codecov from "../Images/codecov.webp";
+import RSPN from "../Images/rpsn.webp";
+import firstpro from "../Images/firstpro.webp";
 import { FaGit, FaGithub, FaPlay } from "react-icons/fa";
 
 const Project = () => {
@@ -36,6 +39,26 @@ const Project = () => {
       demovideo:
         "https://drive.google.com/file/d/12rk2dFJLtHnt5YOXS7P_g_vPIb6qzP0Q/view?usp=share_link",
     },
+    {
+      image: RSPN,
+      name: "R.P.S.N Vacation",
+      dis: "This is a online vacations package booking website",
+      tools: "JavaScript, HTML, CSS, React.js, Redux, Chakra UI, Cyclic API",
+      link: "https://ornate-marigold-ad611d.netlify.app/",
+      github: "https://github.com/Nasirimam/picayune-cap-3141",
+      demovideo:
+        "https://drive.google.com/file/d/1IWD-rN5k36ExOGFJA0HIFy4BoIEYBmwf/view?usp=sharing",
+    },
+    {
+      image: firstpro,
+      name: "Simple E-Commerce Website",
+      dis: "This is an E-Commerce website",
+      tools: "JavaScript, HTML, CSS",
+      link: "https://preeminent-fairy-b11dfe.netlify.app/",
+      github: "https://github.com/Nasirimam/alive-sort-1421",
+      demovideo:
+        "https://drive.google.com/file/d/1ifXmQlE41LnQSMzcU_6QijAUXHeejUv7/view?usp=sharing",
+    },
   ];
 
   const handleGitClick = (url) => {
@@ -51,11 +74,18 @@ const Project = () => {
       <Heading color="red" id="skills" pb={10}>
         Projects
       </Heading>
-      <Flex
+      <SimpleGrid
         w="85%"
         margin="auto"
         border="0px solid white"
         gap={10}
+        columns={{
+          base: 1,
+          sm: 1,
+          md: 2,
+          lg: 2,
+          xl: 2,
+        }}
         flexDirection={{
           base: "column",
           sm: "column",
@@ -135,7 +165,7 @@ const Project = () => {
             </Box>
           </Box>
         ))}
-      </Flex>
+      </SimpleGrid>
     </Box>
   );
 };
