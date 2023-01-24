@@ -1,9 +1,10 @@
 .App {
   text-align: center;
-  background-image: url("https://wallpaperaccess.com/full/5651992.png");
+  background-image: url("https://wallpapercave.com/wp/wp2757874.gif");
+  background-size: 100%;
 }
 
-.App>img{
+.App > img {
   opacity: 0.2;
 }
 

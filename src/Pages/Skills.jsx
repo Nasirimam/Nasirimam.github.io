@@ -52,6 +52,21 @@ const Skills = () => {
       image: "https://miro.medium.com/max/512/1*doAg1_fMQKWFoub-6gwUiQ.png",
       name: "Mongo DB",
     },
+    {
+      image:
+        "https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png",
+      name: "Type-Script",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png",
+      name: "Vs.Code",
+    },
+    {
+      image:
+        "https://s3.eu-west-1.amazonaws.com/niice-cms/2021/03/02/603ec20dc80e6codesandbox-1.png",
+      name: "Vs.Code",
+    },
   ];
 
   return (

@@ -13,15 +13,15 @@ import {
 import { useEffect, useRef } from "react";
 import { useState } from "react";
 // import { NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 import SideBar from "./Sidebar";
 
 const Navbar = () => {
   const [size, setSize] = useState(window.innerWidth);
 
   // console.log(size);
-  
-  if (size>800) {
+
+  if (size > 800) {
     return (
       <Grid
         templateColumns="repeat(8, 1fr)"
@@ -36,39 +36,39 @@ const Navbar = () => {
         bgColor="blackAlpha.800"
         zIndex="overlay"
       >
-        <GridItem>
+        <GridItem color={"whiteAlpha.900"}>
           <span style={{ color: "red" }}>iam</span>Nasir
         </GridItem>
         <Spacer />
-        <GridItem color="white">
-          <HashLink smooth to="#home">
+        <GridItem color="red">
+          <NavHashLink smooth to="#home">
             Home
-          </HashLink>
+          </NavHashLink>
         </GridItem>
-        <GridItem color="white">
-          <HashLink smooth to="#about">
+        <GridItem color="red">
+          <NavHashLink smooth to="#about">
             About Me
-          </HashLink>
+          </NavHashLink>
         </GridItem>
-        <GridItem color="white">
-          <HashLink smooth to="#skills">
+        <GridItem color="red">
+          <NavHashLink smooth to="#skills">
             Skills
-          </HashLink>
+          </NavHashLink>
         </GridItem>
-        <GridItem color="white">
-          <HashLink smooth to="#project">
+        <GridItem color="red">
+          <NavHashLink smooth to="#project">
             Project
-          </HashLink>
+          </NavHashLink>
         </GridItem>
-        <GridItem color="white">
-          <HashLink smooth to="#contect">
+        <GridItem color="red">
+          <NavHashLink smooth to="#contect">
             Contect Me
-          </HashLink>
+          </NavHashLink>
         </GridItem>
-        <GridItem color="white">
-          <HashLink smooth to="#resume">
+        <GridItem color="red">
+          <NavHashLink smooth to="#resume">
             Resume
-          </HashLink>
+          </NavHashLink>
         </GridItem>
       </Grid>
     );

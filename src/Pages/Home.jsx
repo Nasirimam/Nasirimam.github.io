@@ -7,7 +7,6 @@ import {
   Square,
   Image,
 } from "@chakra-ui/react";
-import { FaHandshakeSlash } from "react-icons/fa";
 
 const Home = () => {
   return (

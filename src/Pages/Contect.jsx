@@ -8,6 +8,7 @@ import {
   Button,
   useToast,
   Textarea,
+  Flex,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -101,6 +102,47 @@ const Contect = () => {
       <Heading color="red" id="contect" pb={10}>
         Contect Me
       </Heading>
+      <Flex
+        w={"80%"}
+        margin={"auto"}
+        gap={5}
+        color="blue.600"
+        marginBottom={20}
+        mt={10}
+        flexDir={{
+          base: "column",
+          sm: "column",
+          md: "row",
+          lg: "row",
+          xl: "row",
+          "2xl": "row",
+        }}
+      >
+        <Heading
+          size={{
+            base: "xs",
+            sm: "sm",
+            md: "md",
+            lg: "lg",
+            xl: "xl",
+            "2xl": "2xl",
+          }}
+        >
+          <span style={{ color: "red" }}>Contact No :</span> 7667734990
+        </Heading>
+        <Heading
+          size={{
+            base: "xs",
+            sm: "sm",
+            md: "md",
+            lg: "lg",
+            xl: "xl",
+            "2xl": "2xl",
+          }}
+        >
+          <span style={{ color: "red" }}>Email :</span> imamnasir73@gmail.com
+        </Heading>
+      </Flex>
       <SimpleGrid
         width="80%"
         margin="auto"
@@ -113,7 +155,6 @@ const Contect = () => {
           xl: 2,
           "2xl": 2,
         }}
-        marginBottom={20}
       >
         <GridItem
           display="flex"
