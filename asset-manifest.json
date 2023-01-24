@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1801b5e.css",
-    "main.js": "/static/js/main.1bb61b56.js",
+    "main.css": "/static/css/main.7c4c6b91.css",
+    "main.js": "/static/js/main.1f9623a4.js",
     "static/js/787.a7428201.chunk.js": "/static/js/787.a7428201.chunk.js",
     "static/media/rpsn.webp": "/static/media/rpsn.9fe9982886d0c041a9f3.webp",
     "static/media/firstpro.webp": "/static/media/firstpro.9e479657eb4951aab33c.webp",
     "static/media/GoodFood.webp": "/static/media/GoodFood.675d5902b453723864a0.webp",
+    "static/media/shopkart.webp": "/static/media/shopkart.13262ae0fa43db9286e3.webp",
     "static/media/codecov.webp": "/static/media/codecov.687c11fcfeebc1226c10.webp",
-    "static/media/Nasir_Imam.webp": "/static/media/Nasir_Imam.37565f7750a251b640cf.webp",
-    "static/media/Nasir_Imam_Resume.pdf": "/static/media/Nasir_Imam_Resume.80f7a3465488aadf8672.pdf",
+    "static/media/Nasir_Imam_Resume.pdf": "/static/media/Nasir_Imam_Resume.f4051fdb60f7c6b81297.pdf",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.d1801b5e.css.map": "/static/css/main.d1801b5e.css.map",
-    "main.1bb61b56.js.map": "/static/js/main.1bb61b56.js.map",
+    "main.7c4c6b91.css.map": "/static/css/main.7c4c6b91.css.map",
+    "main.1f9623a4.js.map": "/static/js/main.1f9623a4.js.map",
     "787.a7428201.chunk.js.map": "/static/js/787.a7428201.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1801b5e.css",
-    "static/js/main.1bb61b56.js"
+    "static/css/main.7c4c6b91.css",
+    "static/js/main.1f9623a4.js"
   ]
 }
